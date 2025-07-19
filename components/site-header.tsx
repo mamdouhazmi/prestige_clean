@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Menu, X, Phone, MessageCircle, Star } from "lucide-react"
+import { Menu, X, Phone, MessageCircle, Star } from "lucide-react" // Removed TikTok and Instagram imports
 import { useScreenSize } from "@/hooks/useScreenSize"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
@@ -43,6 +43,12 @@ export function SiteHeader() {
     { href: "/furniture-cleaning", label: "تنظيف المجالس", shortLabel: "تنظيف المجالس", icon: "🛋️" },
   ]
 
+  const primaryPhoneNumber = "0560280857"
+  const newPhoneNumber = "0582807319"
+  const whatsappLink = "http://wa.me/966582807319"
+  const tiktokLink = "https://www.tiktok.com/@prestige_clean1?_t=ZS-8y6wpZRJdzx&_r=1"
+  const instagramLink = "https://www.instagram.com/prestige_clean172000?igsh=dXVscjdja3A2dXhz&utm_source=qr"
+
   return (
     <>
       <header
@@ -55,14 +61,14 @@ export function SiteHeader() {
         <div className="container mx-auto px-3 sm:px-4">
           <div className="flex h-14 sm:h-16 md:h-20 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 sm:space-x-3 group flex-shrink-0">
+            <Link href="/" className="flex items-center space-x-4 sm:space-x-4 group flex-shrink-0">
               <div className="relative">
                 <Image
                   src="/SteamCaresLogo.png"
                   alt="Steam Care Logo"
-                  width={40}
-                  height={40}
-                  className="sm:w-[45px] sm:h-[45px] rounded-full transition-transform duration-300 group-hover:scale-110"
+                  width={64}
+                  height={64}
+                  className="sm:w-[64px] sm:h-[64px] rounded-full transition-transform duration-300 group-hover:scale-110"
                   priority
                 />
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#10B981] rounded-full animate-pulse" />
@@ -102,7 +108,7 @@ export function SiteHeader() {
                 <Button
                   size="sm"
                   className="bg-[#25D366] hover:bg-[#20B358] text-white shadow-md hover:shadow-lg transition-all duration-200 text-xs lg:text-sm px-2 lg:px-3"
-                  onClick={() => window.open("https://wa.me/9660560280857", "_blank")}
+                  onClick={() => window.open(whatsappLink, "_blank")}
                 >
                   <MessageCircle className="w-3 h-3 lg:w-4 lg:h-4 ml-1" />
                   <span className="hidden lg:inline">واتساب</span>
@@ -111,7 +117,7 @@ export function SiteHeader() {
                 <Button
                   size="sm"
                   className="bg-[#1E40AF] hover:bg-[#1D4ED8] text-white shadow-md hover:shadow-lg transition-all duration-200 text-xs lg:text-sm px-2 lg:px-3"
-                  onClick={() => (window.location.href = "tel:+9660560280857")}
+                  onClick={() => (window.location.href = `tel:+966${primaryPhoneNumber}`)}
                 >
                   <Phone className="w-3 h-3 lg:w-4 lg:h-4 ml-1" />
                   <span className="hidden lg:inline">اتصل</span>
@@ -155,16 +161,16 @@ export function SiteHeader() {
               <div className="p-4 sm:p-6 h-full overflow-y-auto">
                 {/* Mobile Menu Header */}
                 <div className="flex items-center justify-between mb-6 sm:mb-8">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-4">
                     <Image
                       src="/SteamCaresLogo.png"
                       alt="Steam Care"
-                      width={35}
-                      height={35}
-                      className="sm:w-[40px] sm:h-[40px] rounded-full"
+                      width={64}
+                      height={64}
+                      className="sm:w-[64px] sm:h-[64px] rounded-full"
                     />
                     <div>
-                      <h2 className="font-bold text-[#1E293B] text-sm sm:text-base">Prestige Clean</h2>
+                      <h2 className="font-bold text-[#1E293B] text-sm sm:text-base">Prestige Clean </h2>
                       <div className="flex items-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-[#F59E0B] text-[#F59E0B]" />
@@ -188,7 +194,10 @@ export function SiteHeader() {
                     >
                       <Link
                         href={item.href}
-                        onClick={closeMenu}
+                        onClick={() => {
+                          closeMenu()
+                          window.scrollTo(0, 0)
+                        }}
                         className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 ${
                           pathname === item.href
                             ? "bg-[#1E40AF] text-white shadow-md"
@@ -203,11 +212,11 @@ export function SiteHeader() {
                 </nav>
 
                 {/* Mobile Contact Buttons */}
-                <div className="space-y-3">
+                <div className="space-y-3 mb-6 sm:mb-8">
                   <Button
                     className="w-full bg-[#25D366] hover:bg-[#20B358] text-white h-11 sm:h-12 shadow-md hover:shadow-lg transition-all duration-200 text-sm sm:text-base"
                     onClick={() => {
-                      window.open("https://wa.me/9660560280857", "_blank")
+                      window.open(whatsappLink, "_blank")
                       closeMenu()
                     }}
                   >
@@ -217,13 +226,48 @@ export function SiteHeader() {
                   <Button
                     className="w-full bg-[#1E40AF] hover:bg-[#1D4ED8] text-white h-11 sm:h-12 shadow-md hover:shadow-lg transition-all duration-200 text-sm sm:text-base"
                     onClick={() => {
-                      window.location.href = "tel:+9660560280857"
+                      window.location.href = `tel:+966${primaryPhoneNumber}`
                       closeMenu()
                     }}
                   >
                     <Phone className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
-                    اتصل الآن: 0560280857
+                    اتصل الآن: {primaryPhoneNumber}
                   </Button>
+                  <Button
+                    className="w-full bg-[#1E40AF] hover:bg-[#1D4ED8] text-white h-11 sm:h-12 shadow-md hover:shadow-lg transition-all duration-200 text-sm sm:text-base"
+                    onClick={() => {
+                      window.location.href = `tel:+966${newPhoneNumber}`
+                      closeMenu()
+                    }}
+                  >
+                    <Phone className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
+                    اتصل الآن: {newPhoneNumber}
+                  </Button>
+                </div>
+
+                {/* Mobile Social Media Links */}
+                <div className="flex justify-center gap-4 mb-6 sm:mb-8">
+                  <a href={tiktokLink} target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <img
+                      src="/icons/tiktok.png"
+                      alt="TikTok"
+                      className="w-7 h-7 sm:w-8 sm:h-8 hover:opacity-80 transition-opacity"
+                    />
+                  </a>
+                  <a href={instagramLink} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img
+                      src="/icons/instagram.png"
+                      alt="Instagram"
+                      className="w-7 h-7 sm:w-8 sm:h-8 hover:opacity-80 transition-opacity"
+                    />
+                  </a>
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <img
+                      src="/icons/whatsapp.png"
+                      alt="WhatsApp"
+                      className="w-7 h-7 sm:w-8 sm:h-8 hover:opacity-80 transition-opacity"
+                    />
+                  </a>
                 </div>
 
                 {/* Mobile Menu Footer */}
@@ -254,6 +298,7 @@ function NavLink({
   return (
     <Link
       href={href}
+      onClick={() => window.scrollTo(0, 0)} // Added onClick to scroll to top
       className={`relative px-2 lg:px-3 py-2 font-medium rounded-lg transition-all duration-200 hover:bg-[#F1F5F9] whitespace-nowrap ${
         compact ? "text-xs" : "text-sm"
       } ${isActive ? "text-[#1E40AF] bg-[#EFF6FF]" : "text-[#475569] hover:text-[#1E40AF]"}`}

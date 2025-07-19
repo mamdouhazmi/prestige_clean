@@ -82,7 +82,8 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
-    generator: 'v0.dev'
+  manifest: "/manifest.ts", // Add manifest link
+  generator: "v0.dev",
 }
 
 export default function RootLayout({

@@ -1,19 +1,12 @@
 "use client"
 
-import Image from "next/image"
+import Image, { type ImageProps } from "next/image"
 import { useState } from "react"
 import { cn } from "@/lib/utils"
 
-interface OptimizedImageProps {
-  src: string
-  alt: string
-  width: number
-  height: number
-  className?: string
-  priority?: boolean
-  sizes?: string
-  fill?: boolean
-}
+// By simply extending ImageProps, we inherit its behavior where
+// width and height are optional when fill={true} or sizes is provided.
+interface OptimizedImageProps extends ImageProps {}
 
 export function OptimizedImage({
   src,

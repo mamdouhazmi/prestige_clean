@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
+import { MessageCircle } from "lucide-react"
+import Image from "next/image"
 
 // Services Data
 const services = [
@@ -70,53 +70,46 @@ const services = [
 `,
     image: "/services/6.jpg",
   },
-];
+]
 
 export function ServicesSection() {
   // Handle WhatsApp Click Event
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/9660560280857", "_blank");
-  };
+    window.open("https://wa.me/9660560280857", "_blank")
+  }
 
   return (
     <section className="py-16 bg-[#DBE2EF]">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4 text-[#112D4E]">
-          فريقنا
-        </h2>
-        <p className="text-center text-[#3F72AF] mb-12">
-          يقودنا فريق لا يتوقف عن التفكير والإبداع. ويحرص دومًا على دفعنا إلى
-          الأمام.
+        <h2 className="text-4xl font-bold text-center mb-6 text-[#112D4E]">فريقنا</h2>
+        <p className="text-center text-[#3F72AF] mb-16 max-w-2xl mx-auto">
+          يقودنا فريق لا يتوقف عن التفكير والإبداع. ويحرص دومًا على دفعنا إلى الأمام.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
-            >
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative">
                 <Image
-                  src={service.image}
+                  src={service.image || "/placeholder.svg"}
                   alt={service.title}
                   width={400}
                   height={300}
                   className="w-full h-[250px] object-cover"
                 />
-                <div className="absolute top-4 right-4 bg-[#3F72AF] text-white px-3 py-1 rounded-full">
-                  Steam Care
+                <div className="absolute top-4 right-4 bg-[#3F72AF] text-white px-3 py-1 rounded-full text-xs">
+                  Prestige Clean
                 </div>
-                <div className="absolute top-4 left-4 bg-[#112D4E] text-white px-3 py-1 rounded-full">
+                <div className="absolute top-4 left-4 bg-[#112D4E] text-white px-3 py-1 rounded-full text-xs mb-1">
                   0560280857
+                </div>
+                <div className="absolute top-12 left-4 bg-[#112D4E] text-white px-3 py-1 rounded-full text-xs">
+                  0582807319
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-[#112D4E]">
-                  {service.title}
-                </h3>
-                <p className="text-[#3F72AF] mb-4 whitespace-pre-wrap">
-                  {service.description}
-                </p>
+                <h3 className="text-xl font-bold mb-3 text-[#112D4E]">{service.title}</h3>
+                <p className="text-[#3F72AF] mb-4 whitespace-pre-wrap">{service.description}</p>
                 <Button
                   onClick={handleWhatsAppClick}
                   className="w-full bg-[#3F72AF] hover:bg-[#112D4E] text-white flex items-center justify-center gap-2"
@@ -130,5 +123,5 @@ export function ServicesSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

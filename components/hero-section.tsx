@@ -6,13 +6,9 @@ import { OptimizedImage } from "./optimized-image"
 import { motion } from "framer-motion"
 
 export function HeroSection() {
-  const handleWhatsAppClick = () => {
-    window.open("https://wa.me/9660560280857", "_blank")
-  }
-
-  const handlePhoneClick = () => {
-    window.location.href = "tel:+9660560280857"
-  }
+  const primaryPhoneNumber = "0560280857"
+  const newPhoneNumber = "0582807319"
+  const whatsappLink = "http://wa.me/966582807319"
 
   const features = [
     { icon: Star, text: "أفضل أنواع المنظفات" },
@@ -32,7 +28,7 @@ export function HeroSection() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1E293B]/85 via-[#1E293B]/70 to-[#1E40AF]/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1E293B]/65 via-[#1E293B]/50 to-[#1E40AF]/30" />
       </div>
 
       {/* Content */}
@@ -93,7 +89,7 @@ export function HeroSection() {
             <Button
               size="lg"
               className="bg-[#25D366] hover:bg-[#20B358] text-white w-full sm:min-w-[250px] h-12 sm:h-14 text-base sm:text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95"
-              onClick={handleWhatsAppClick}
+              onClick={() => window.open(whatsappLink, "_blank")}
             >
               <MessageCircle className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
               تواصل معنا واتساب
@@ -102,10 +98,20 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               className="w-full sm:min-w-[250px] h-12 sm:h-14 text-base sm:text-lg font-bold bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-[#1E293B] shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95"
-              onClick={handlePhoneClick}
+              onClick={() => (window.location.href = `tel:+966${primaryPhoneNumber}`)}
             >
               <Phone className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
-              <span className="hidden sm:inline">اتصل الآن: 0560280857</span>
+              <span className="hidden sm:inline">اتصل الآن: {primaryPhoneNumber}</span>
+              <span className="sm:hidden">اتصل الآن</span>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:min-w-[250px] h-12 sm:h-14 text-base sm:text-lg font-bold bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-[#1E293B] shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95"
+              onClick={() => (window.location.href = `tel:+966${newPhoneNumber}`)}
+            >
+              <Phone className="ml-2 w-5 h-5 sm:w-6 sm:h-6" />
+              <span className="hidden sm:inline">اتصل الآن: {newPhoneNumber}</span>
               <span className="sm:hidden">اتصل الآن</span>
             </Button>
           </motion.div>
