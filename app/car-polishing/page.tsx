@@ -13,13 +13,13 @@ import { LoadingSpinner } from "@/components/loading-spinner"
 import { PerformanceMonitor } from "@/components/performance-monitor"
 
 export const metadata: Metadata = {
-  title: "تلميع سيارات بالرياض - خدمة تلميع داخلي وخارجي احترافية | Prestige Clean",
+  title: "تلميع سيارات بالرياض - خدمة تلميع داخلي وخارجي احترافية | Ghaseloo",
   description:
     "أفضل شركة تلميع سيارات بالرياض. خدمة تلميع داخلي وخارجي احترافية، إزالة الخدوش، تلميع المقاعد والديكورات. خصم 30% - اتصل الآن 0560280857",
   keywords:
     "تلميع سيارات الرياض, تلميع سيارات داخلي, تلميع سيارات خارجي, شركة تلميع سيارات, تلميع مقاعد السيارة, إزالة خدوش السيارة",
   openGraph: {
-    title: "تلميع سيارات بالرياض - خدمة احترافية | Prestige Clean",
+    title: "تلميع سيارات بالرياض - خدمة احترافية | Ghaseloo",
     description: "أفضل شركة تلميع سيارات بالرياض. تلميع داخلي وخارجي، إزالة الخدوش، نتائج مضمونة. خصم 30%",
     url: "https://steamcares.com/car-polishing",
     images: [{ url: "/services/service-polishing-og.jpg", width: 1200, height: 630 }],

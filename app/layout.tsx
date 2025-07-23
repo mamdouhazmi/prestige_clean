@@ -17,11 +17,11 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   metadataBase: new URL("https://steamcares.com"),
   title: {
-    default: "Prestige Clean - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
-    template: "%s | Prestige Clean",
+    default: "Ghaseloo - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
+    template: "%s | Ghaseloo",
   },
   description:
-    "شركة Prestige Clean الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي. اتصل الآن 0560280857",
+    "شركة Ghaseloo الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي. اتصل الآن 0560280857",
   keywords: [
     "غسيل سيارات بالبخار الرياض",
     "تلميع سيارات متنقل",
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     "شركة تلميع سيارات الرياض",
     "غسيل سيارات عند البيت",
     "تنظيف المجالس والكنب",
-    "Prestige Clean",
+    "Ghaseloo",
   ],
-  authors: [{ name: "Prestige Clean" }],
-  creator: "Prestige Clean",
-  publisher: "Prestige Clean",
+  authors: [{ name: "Ghaseloo" }],
+  creator: "Ghaseloo",
+  publisher: "Ghaseloo",
   robots: {
     index: true,
     follow: true,
@@ -50,23 +50,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ar_SA",
     url: "https://steamcares.com",
-    siteName: "Prestige Clean",
-    title: "Prestige Clean - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
+    siteName: "Gaseloo",
+    title: "Gaseloo - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
     description:
-      "شركة Prestige Clean الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي.",
+      "شركة Gaseloo الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Prestige Clean - خدمات غسيل السيارات بالبخار",
+        alt: "Ghaseloo - خدمات غسيل السيارات بالبخار",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prestige Clean - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
-    description: "شركة Prestige Clean الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية.",
+    title: "Ghaseloo - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
+    description: "شركة Ghaseloo الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية.",
     images: ["/og-image.jpg"],
   },
   verification: {
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/Logo.jpg", sizes: "32x32", type: "image/png" },
     ],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },

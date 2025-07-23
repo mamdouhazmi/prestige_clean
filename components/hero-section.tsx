@@ -19,13 +19,13 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full h-full">
         <OptimizedImage
           src="/Background.jpg"
-          alt="خدمات غسيل وتلميع السيارات بالبخار - Prestige Clean"
+          alt="خدمات غسيل وتلميع السيارات بالبخار - Ghaseloo"
           fill
           priority
-          className="object-cover"
+          className="object-cover w-full h-full"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#1E293B]/65 via-[#1E293B]/50 to-[#1E40AF]/30" />

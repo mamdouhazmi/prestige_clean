@@ -20,13 +20,13 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full h-full">
         <OptimizedImage
-          src="/Background3.jpg"
-          alt="غسيل سيارات بالبخار متنقل - Prestige Clean"
+          src="/Background10.jpg"
+          alt="غسيل سيارات بالبخار متنقل - Ghaseloo"
           fill
           priority
-          className="object-cover"
+          className="object-cover w-full h-full"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#112D4E]/75 via-[#3F72AF]/55 to-[#112D4E]/70" />

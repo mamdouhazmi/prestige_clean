@@ -7,7 +7,7 @@ export function FixedContactButtons() {
   }
 
   const handlePhoneClick = () => {
-    window.location.href = "tel:+966582807319" // Updated phone number
+    window.location.href = "tel:+9660582807319" // Updated phone number
   }
 
   return (
@@ -17,7 +17,7 @@ export function FixedContactButtons() {
         className="bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full p-4 shadow-xl transition-colors duration-200 flex items-center justify-center w-16 h-16" // Enhanced UI
         aria-label="تواصل معنا واتساب"
       >
-        <Image src="/icons/icons8-whatsapp-logo-100.png" alt="WhatsApp Icon" width={40} height={40} /> {/* Replaced Lucide icon with Image */}
+        <Image src="/icons/whatsapp.png" alt="WhatsApp Icon" width={40} height={40} /> {/* Replaced Lucide icon with Image */}
       </button>
       <button
         onClick={handlePhoneClick}

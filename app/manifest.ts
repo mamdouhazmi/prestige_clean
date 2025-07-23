@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Prestige Clean - خدمات غسيل وتلميع السيارات بالبخار",
-    short_name: "Prestige Clean",
+    name: "Ghaseloo - خدمات غسيل وتلميع السيارات بالبخار",
+    short_name: "Ghaseloo",
     description:
-      "شركة Prestige Clean الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي.",
+      "شركة Ghaseloo الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي.",
     start_url: "/",
     display: "standalone",
     background_color: "#112D4E",
@@ -17,7 +17,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
       {
-        src: "/favicon-32x32.png",
+        src: "/Logo.jpg",
         sizes: "32x32",
         type: "image/png",
       },

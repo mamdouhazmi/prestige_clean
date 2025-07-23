@@ -47,7 +47,7 @@ export function ServicesSection() {
                   className="w-full h-[250px] object-cover"
                 />
                 <div className="absolute top-4 right-4 bg-[#3F72AF] text-white px-3 py-1 rounded-full text-xs">
-                  Prestige Clean
+                  Ghaseloo
                 </div>
                 <div className="absolute top-4 left-4 bg-[#112D4E] text-white px-3 py-1 rounded-full text-xs mb-1">
                   0560280857

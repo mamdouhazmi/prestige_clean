@@ -2,8 +2,8 @@ export default function JsonLd() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "Prestige Clean",
-    description: "شركة Prestige Clean الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض",
+    name: "Ghaseloo",
+    description: "شركة Ghaseloo الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض",
     url: "https://steamcares.com",
     telephone: "+966560280857",
     address: {
@@ -55,7 +55,7 @@ export default function JsonLd() {
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Prestige Clean",
+    name: "Ghaseloo",
     url: "https://steamcares.com",
     potentialAction: {
       "@type": "SearchAction",

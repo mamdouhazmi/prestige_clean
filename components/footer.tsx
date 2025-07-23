@@ -130,7 +130,7 @@ export function Footer() {
                 aria-label="WhatsApp"
                 className="hover:opacity-80 transition-opacity"
               >
-                <img src="/icons/icons8-whatsapp-logo-48.png" alt="WhatsApp" className="w-8 h-8" />
+                <img src="/icons/whatsapp.png" alt="WhatsApp" className="w-8 h-8" />
               </a>
             </div>
           </div>

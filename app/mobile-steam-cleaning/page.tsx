@@ -15,13 +15,13 @@ import { LoadingSpinner } from "@/components/loading-spinner"
 import { PerformanceMonitor } from "@/components/performance-monitor"
 
 export const metadata: Metadata = {
-  title: "غسيل سيارات بالبخار متنقل بالرياض - خدمة في موقعك | Prestige Clean",
+  title: "غسيل سيارات بالبخار متنقل بالرياض - خدمة في موقعك | Ghaseloo",
   description:
     "أفضل خدمة غسيل سيارات بالبخار متنقل في الرياض. تنظيف داخلي وخارجي، تعقيم شامل، خدمة في موقعك. متاح 24/7 - اتصل 0560280857",
   keywords:
     "غسيل سيارات بالبخار متنقل, غسيل سيارات عند البيت, مغسلة سيارات متنقلة الرياض, غسيل سيارات بالبخار الرياض, تنظيف سيارات متنقل",
   openGraph: {
-    title: "غسيل سيارات بالبخار متنقل بالرياض | Prestige Clean",
+    title: "غسيل سيارات بالبخار متنقل بالرياض | Ghaseloo",
     description: "خدمة غسيل سيارات بالبخار متنقلة احترافية. تنظيف داخلي وخارجي، تعقيم شامل في موقعك.",
     url: "https://steamcares.com/mobile-steam-cleaning",
     images: [{ url: "/services/mobile-wash-og.jpg", width: 1200, height: 630 }],

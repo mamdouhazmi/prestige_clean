@@ -13,22 +13,22 @@ import { LoadingSpinner } from "@/components/loading-spinner"
 import { PerformanceMonitor } from "@/components/performance-monitor"
 
 export const metadata: Metadata = {
-  title: "Prestige Clean - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
+  title: "Ghaseloo - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
   description:
-    "شركة Prestige Clean الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي. اتصل الآن 0560280857",
+    "شركة Ghaseloo الرائدة في خدمات غسيل وتلميع السيارات بالبخار في الرياض. خدمة متنقلة احترافية، تنظيف المراتب، تلميع داخلي وخارجي. اتصل الآن 0560280857",
   keywords:
     "غسيل سيارات بالبخار الرياض, تلميع سيارات متنقل, غسيل مراتب السيارة, تنظيف السيارات الداخلي, شركة تلميع سيارات الرياض",
   openGraph: {
-    title: "Prestige Clean - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
+    title: "Ghaseloo - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
     description: "خدمة متنقلة احترافية لغسيل وتلميع السيارات بالبخار. تنظيف المراتب، تلميع داخلي وخارجي، نتائج مضمونة.",
     url: "https://steamcares.com",
-    siteName: "Prestige Clean",
+    siteName: "Ghaseloo",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Prestige Clean - خدمات غسيل السيارات بالبخار",
+        alt: "Ghaseloo - خدمات غسيل السيارات بالبخار",
       },
     ],
     locale: "ar_SA",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prestige Clean - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
+    title: "Ghaseloo - أفضل شركة غسيل وتلميع السيارات بالبخار في الرياض",
     description: "خدمة متنقلة احترافية لغسيل وتلميع السيارات بالبخار. اتصل الآن 0560280857",
     images: ["/og-image.jpg"],
   },

@@ -61,14 +61,14 @@ export function SiteHeader() {
         <div className="container mx-auto px-3 sm:px-4">
           <div className="flex h-14 sm:h-16 md:h-20 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-4 sm:space-x-4 group flex-shrink-0">
-              <div className="relative">
+            <Link href="/" className="flex items-center gap-6 sm:gap-8 group flex-shrink-0">
+              <div className="relative mr-4 sm:mr-6">
                 <Image
-                  src="/SteamCaresLogo.png"
+                  src="/Logo.jpg"
                   alt="Steam Care Logo"
                   width={64}
                   height={64}
-                  className="sm:w-[64px] sm:h-[64px] rounded-full transition-transform duration-300 group-hover:scale-110"
+                  className="rounded-full transition-transform duration-300 group-hover:scale-110"
                   priority
                 />
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#10B981] rounded-full animate-pulse" />
@@ -76,7 +76,7 @@ export function SiteHeader() {
 
               <div className="flex items-center">
                 <h1 className="text-base sm:text-lg md:text-xl font-bold text-[#1E293B] group-hover:text-[#1E40AF] transition-colors whitespace-nowrap">
-                  Prestige Clean
+                  Ghaseloo
                 </h1>
               </div>
             </Link>
@@ -162,15 +162,9 @@ export function SiteHeader() {
                 {/* Mobile Menu Header */}
                 <div className="flex items-center justify-between mb-6 sm:mb-8">
                   <div className="flex items-center gap-4">
-                    <Image
-                      src="/SteamCaresLogo.png"
-                      alt="Steam Care"
-                      width={64}
-                      height={64}
-                      className="sm:w-[64px] sm:h-[64px] rounded-full"
-                    />
+                    <Image src="/SteamCaresLogo.png" alt="Steam Care" width={64} height={64} className="rounded-full" />
                     <div>
-                      <h2 className="font-bold text-[#1E293B] text-sm sm:text-base">Prestige Clean </h2>
+                      <h2 className="font-bold text-[#1E293B] text-sm sm:text-base">Ghaseloo </h2>
                       <div className="flex items-center gap-1">
                         {[...Array(5)].map((_, i) => (
                           <Star key={i} className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-[#F59E0B] text-[#F59E0B]" />

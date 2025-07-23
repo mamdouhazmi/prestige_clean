@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Phone, MessageCircle, Droplets, Shield, Sparkles, Award } from "lucide-react"
+import { Phone, MessageCircle, Droplets, Shield, Sparkles, Award } from 'lucide-react'
 import { OptimizedImage } from "@/components/optimized-image"
 import { motion } from "framer-motion"
 
@@ -20,13 +20,13 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full h-full">
         <OptimizedImage
-          src="/Background3.jpg"
-          alt="غسيل مراتب السيارة بالبخار - Prestige Clean"
+          src="/Background6.jpg"
+          alt="غسيل مراتب السيارة بالبخار - Ghaseloo"
           fill
           priority
-          className="object-cover"
+          className="object-cover w-full h-full"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#112D4E]/75 via-[#3F72AF]/55 to-[#112D4E]/65" />

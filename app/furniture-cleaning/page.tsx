@@ -13,13 +13,13 @@ import { LoadingSpinner } from "@/components/loading-spinner"
 import { PerformanceMonitor } from "@/components/performance-monitor"
 
 export const metadata: Metadata = {
-  title: "تنظيف المجالس والكنب بالرياض - غسيل بالبخار وإزالة البقع | Prestige Clean",
+  title: "تنظيف المجالس والكنب بالرياض - غسيل بالبخار وإزالة البقع | Ghaseloo",
   description:
     "أفضل شركة تنظيف المجالس والكنب والسجاد بالرياض. غسيل بالبخار، إزالة البقع الصعبة، تعقيم شامل. خدمة متنقلة احترافية - اتصل 0560280857",
   keywords:
     "تنظيف المجالس بالرياض, غسيل الكنب بالبخار, تنظيف السجاد والموكيت, شركة تنظيف مفروشات, غسيل الستائر بالبخار",
   openGraph: {
-    title: "تنظيف المجالس والكنب بالرياض - غسيل بالبخار | Prestige Clean",
+    title: "تنظيف المجالس والكنب بالرياض - غسيل بالبخار | Ghaseloo",
     description: "خدمة تنظيف المجالس والكنب والسجاد بالبخار. إزالة البقع الصعبة، تعقيم شامل، نتائج مضمونة.",
     url: "https://steamcares.com/furniture-cleaning",
     images: [{ url: "/services/furniture-cleaning-og.jpg", width: 1200, height: 630 }],

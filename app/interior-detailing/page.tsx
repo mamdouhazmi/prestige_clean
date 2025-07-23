@@ -14,13 +14,13 @@ import { LoadingSpinner } from "@/components/loading-spinner"
 import { PerformanceMonitor } from "@/components/performance-monitor"
 
 export const metadata: Metadata = {
-  title: "تلميع سيارات متنقل الرياض - خدمة تلميع داخلي وخارجي في موقعك | Prestige Clean",
+  title: "تلميع سيارات متنقل الرياض - خدمة تلميع داخلي وخارجي في موقعك | Ghaseloo",
   description:
     "أفضل شركة تلميع سيارات متنقل بالرياض. خدمة تلميع داخلي وخارجي في موقعك، تنظيف المقاعد، تلميع الديكورات. متاح 24/7 - اتصل 0560280857",
   keywords:
     "تلميع سيارات متنقل الرياض, تلميع سيارات في البيت, تلميع سيارات داخلي متنقل, شركة تلميع متنقلة, تلميع سيارات عند البيت",
   openGraph: {
-    title: "تلميع سيارات متنقل الرياض - خدمة في موقعك | Prestige Clean",
+    title: "تلميع سيارات متنقل الرياض - خدمة في موقعك | Ghaseloo",
     description: "خدمة تلميع سيارات متنقلة احترافية في الرياض. تلميع داخلي وخارجي في موقعك، نتائج مضمونة.",
     url: "https://steamcares.com/interior-detailing",
     images: [{ url: "/services/mobile-detailing-og.jpg", width: 1200, height: 630 }],

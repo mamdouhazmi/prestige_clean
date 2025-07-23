@@ -13,13 +13,13 @@ import { LoadingSpinner } from "@/components/loading-spinner"
 import { PerformanceMonitor } from "@/components/performance-monitor"
 
 export const metadata: Metadata = {
-  title: "غسيل مراتب السيارة بالبخار بالرياض - تنظيف عميق وتعقيم | Prestige Clean",
+  title: "غسيل مراتب السيارة بالبخار بالرياض - تنظيف عميق وتعقيم | Ghaseloo",
   description:
     "أفضل خدمة غسيل مراتب السيارة بالبخار في الرياض. تنظيف عميق، إزالة البقع الصعبة، تعقيم شامل. خدمة متنقلة احترافية. اتصل الآن 0560280857",
   keywords:
     "غسيل مراتب السيارة بالبخار, تنظيف مراتب السيارة الرياض, غسيل مقاعد السيارة, تعقيم مراتب السيارة, إزالة بقع المراتب",
   openGraph: {
-    title: "غسيل مراتب السيارة بالبخار بالرياض | Prestige Clean",
+    title: "غسيل مراتب السيارة بالبخار بالرياض | Ghaseloo",
     description: "تنظيف عميق وتعقيم شامل لمراتب السيارة بالبخار. إزالة البقع الصعبة، خدمة متنقلة احترافية.",
     url: "https://steamcares.com/steam-seat-cleaning",
     images: [{ url: "/services/seat-cleaning-og.jpg", width: 1200, height: 630 }],
